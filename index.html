@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小官网</title>
+<!--    引入字体-->
+    <link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--引入glide_css-->
+    <link rel="stylesheet" href="libs/glide/glide.core.min.css">
+    <link rel="stylesheet" href="libs/glide/glide.theme.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+<!--头部导航-->
+    <header>
+        <div class="logo">
+            千翎科技
+        </div>
+        <nav>
+            <a href="#">首页</a>
+            <a href="#">关于我们</a>
+            <a href="#">成功案例</a>
+            <a href="#">服务流程</a>
+            <a href="#">团队介绍</a>
+            <a href="#">公司动态</a>
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </nav>
+        <div class="burger">
+            <div class="burger-line-1"></div>
+            <div class="burger-line-2"></div>
+            <div class="burger-line-3"></div>
+        </div>
+    </header>
+<!--    轮播部分-->
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <div class="glide__slides">
+                <div class="glide__slide">
+                    <div class="slide-caption">
+                        <h1>
+                            用创新点缀人生，让科技融入理想。
+                        </h1>
+                        <h3>科技创新大平台，智慧生活新引擎。依靠科技进步推进经济跨越发展。用创新点缀人生，让科技融入理想。</h3>
+                        <button class="explore-btn">探索更多</button>
+                    </div>
+                    <!--                        定义背景遮罩层-->
+                    <div class="backdrop"></div>
+                    <!--                        引入轮播-->
+                    <img src="src/assets/images/people-in-couch-1024248.jpg" />
+                </div>
+                <div class="glide__slide">
+                    <div class="slide-caption left">
+                        <h1>
+                            科技改变世界
+                        </h1>
+                        <h3>立足科学发展，着力自主创新。加速科技进步，为全市经济社会发展提供有力支持。凝聚科技创新，成就创新梦想。</h3>
+                        <button class="explore-btn">探索更多</button>
+                    </div>
+                    <!--                        定义背景遮罩层-->
+                    <div class="backdrop"></div>
+                    <!--                        引入轮播-->
+                    <video src="src/assets/videos/working-man.mp4" muted autoplay loop></video>
+                </div>
+            </div>
+        </div>
+<!--        定义切换轮播按钮-->
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                <
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                >
+            </button>
+        </div>
+<!--        定义轮播圆点-->
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+        </div>
+    </div>
+    <div class="content-wrapper">
+<!--        关于我们-->
+        <section class="about-us">
+            <h2 class="title1">关于我们</h2>
+            <p class="intro">
+                网络公司不仅仅提供域名注册，空间租用，网站开发，网站建设与网络营销活动策划相关的企业
+            </p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    <h4 class="feature-title">品牌创意</h4>
+                    <p class="feature-content">为企业计划独特的并能完美呈现企业价值观的视觉</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    <h4 class="feature-title">整合营销</h4>
+                    <p class="feature-content">为企业设计独特的并能完美呈现企业价值观的视觉</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <h4 class="feature-title">电子商务</h4>
+                    <p class="feature-content">为企业计划独特的并能完美呈现企业价值观的视觉</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-desktop" aria-hidden="true"></i>
+                    <h4 class="feature-title">网页设计</h4>
+                    <p class="feature-content">为企业计划独特的并能完美呈现企业价值观的视觉</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    <h4 class="feature-title">网站优化</h4>
+                    <p class="feature-content">为企业计划独特的并能完美呈现企业价值观的视觉</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-server" aria-hidden="true"></i>
+                    <h4 class="feature-title">网站架设</h4>
+                    <p class="feature-content">为企业计划独特的并能完美呈现企业价值观的视觉</p>
+                </div>
+            </div>
+        </section>
+<!--        成功案例-->
+        <section class="showcases section-bg">
+            <h2 class="title1">
+                成功案例
+            </h2>
+            <div class="filter-btns">
+<!--                点击时知道是哪个类别-->
+                <button class="filter-btn active" data-filter="*">全部</button>
+                <button class="filter-btn" data-filter=".web">WEB</button>
+                <button class="filter-btn" data-filter=".mobile">移动</button>
+                <button class="filter-btn" data-filter=".science">科研</button>
+            </div>
+            <diiv class="cases">
+<!--                web science得定义类别-->
+                <div class="case-item web science">
+                    <img src="src/assets/images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" alt="">
+                </div>
+                <div class="case-item web science">
+                    <img src="src/assets/images/photo-of-imac-near-macbook-1029757.jpg" alt="">
+                </div>
+                <div class="case-item web">
+                    <img src="src/assets/images/apple-laptop-notebook-office-39284.jpg" alt="">
+                </div>
+                <div class="case-item mobile">
+                    <img src="src/assets/images/apple-apple-device-design-desk-285814.jpg" alt="">
+                </div>
+                <div class="case-item mobile science">
+                    <img src="src/assets/images/person-using-black-and-white-smartphone-and-holding-blue-230544.jpg" alt="">
+                </div>
+                <div class="case-item web mobile">
+                    <img src="src/assets/images/person-holding-a-smartphone-892757.jpg" alt="">
+                </div>
+                <div class="case-item web">
+                    <img src="src/assets/images/blur-close-up-code-computer-546819.jpg" alt="">
+                </div>
+                <div class="case-item science">
+                    <img src="src/assets/images/bokeh-photography-of-person-holding-turned-on-iphone-1440727.jpg" alt="">
+                </div>
+            </diiv>
+        </section>
+<!--        服务流程-->
+        <section class="service">
+            <h2 class="title1">服务流程</h2>
+            <p class="intro">
+                网络综合公司，提供包括网络基础服务（如域名，主机，邮箱）和网络增值服务（如网站建设和推广，网站优化）等业务。
+            </p>
+            <div class="services">
+                <div class="service-item">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                    <h2 class="service-title">需求沟通</h2>
+                    <p class="service-content">客户提出网站建设的基本要求，包括设计要求及功能要求</p>
+                </div>
+                <div class="service-item">
+                    <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                    <h2 class="service-title">项目评估</h2>
+                    <p class="service-content">客户提出网站建设的基本要求，包括设计要求及功能要求</p>
+                </div>
+                <div class="service-item">
+                    <i class="fa fa-file" aria-hidden="true"></i>
+                    <h2 class="service-title">签订合同</h2>
+                    <p class="service-content">客户提出网站建设的基本要求，包括设计要求及功能要求</p>
+                </div>
+                <div class="service-item">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <h2 class="service-title">提案阶段</h2>
+                    <p class="service-content">客户提出网站建设的基本要求，包括设计要求及功能要求</p>
+                </div>
+                <div class="service-item">
+                    <i class="fa fa-align-justify" aria-hidden="true"></i>
+                    <h2 class="service-title">制作阶段</h2>
+                    <p class="service-content">客户提出网站建设的基本要求，包括设计要求及功能要求</p>
+                </div>
+                <div class="service-item">
+                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                    <h2 class="service-title">网站验收</h2>
+                    <p class="service-content">客户提出网站建设的基本要求，包括设计要求及功能要求</p>
+                </div>
+            </div>
+        </section>
+<!--        团队介绍-->
+        <section class="team-intro section-bg">
+            <h2 class="title1">
+                团队介绍
+            </h2>
+            <div class="team-members">
+<!--                定义团队成员的item-->
+                <div class="team-member">
+                    <div class="profile-image">
+                        <img src="src/assets/images/man-wearing-black-suit-2955376.jpg" alt="">
+                    </div>
+                    <h4 class="name">李涵</h4>
+                    <p class="position">前端工程师</p>
+<!--                    定义联系方式-->
+                    <ul class="social-links">
+                        <li><a  href="#"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+                        <li><a  href="#"><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
+                        <li><a  href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a  href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="team-member">
+                    <div class="profile-image">
+                        <img src="src/assets/images/selective-focus-photograph-of-man-wearing-gray-suit-jacket-1138903.jpg" alt="">
+                    </div>
+                    <h4 class="name">李明</h4>
+                    <p class="position">市场专员</p>
+                    <!--                    定义联系方式-->
+                    <ul class="social-links">
+                        <li><a  href="#"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+                        <li><a  href="#"><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
+                        <li><a  href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a  href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="team-member">
+                    <div class="profile-image">
+                        <img src="src/assets/images/business-woman-2697954_1920.jpg" alt="">
+                    </div>
+                    <h4 class="name">李杰</h4>
+                    <p class="position">后端工程师</p>
+                    <!--                    定义联系方式-->
+                    <ul class="social-links">
+                        <li><a  href="#"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+                        <li><a  href="#"><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
+                        <li><a  href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a  href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="team-member">
+                    <div class="profile-image">
+                        <img src="src/assets/images/smiling-woman-wearing-black-sweater-1587009.jpg" alt="">
+                    </div>
+                    <h4 class="name">李楠</h4>
+                    <p class="position">UI工程师</p>
+                    <!--                    定义联系方式-->
+                    <ul class="social-links">
+                        <li><a  href="#"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+                        <li><a  href="#"><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
+                        <li><a  href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a  href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+<!--        数据展示部分-->
+        <section class="data-section">
+            <div class="data-piece">
+                <i class="fa fa-code" aria-hidden="true"></i>
+                <div class="num">156</div>
+                <div class="data-desc">行代码</div>
+            </div>
+
+            <div class="data-piece">
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+                <div class="num">256</div>
+                <div class="data-desc">个奖项</div>
+            </div>
+
+            <div class="data-piece">
+                <i class="fa fa-address-book" aria-hidden="true"></i>
+                <div class="num">288</div>
+                <div class="data-desc">个客户</div>
+            </div>
+
+            <div class="data-piece">
+                <i class="fa fa-folder" aria-hidden="true"></i>
+                <div class="num">200</div>
+                <div class="data-desc">个项目</div>
+            </div>
+        </section>
+<!--        公司动态-->
+        <section class="company-activities">
+            <h2 class="title1">
+                公司动态
+            </h2>
+            <p class="intro">
+                关注公司动态，第一时间获取一手消息
+            </p>
+            <section class="activities">
+                <div class="activity">
+                    <div class="act-img-wrapper">
+                        <img src="src/assets/images/activity01-image.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                        <p class="date-published">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>2020年12月11日
+                        </p>
+                        <p class="comments">
+                            <i class="fa fa-comments" aria-hidden="true"></i>33条评论
+                        </p>
+                    </div>
+                    <h2 class="act-title">提供互联网接入的ISP公司</h2>
+                    <article>网络公司指的是提供网络服务的互联网内容提供商ICP公司，提供互联网接入的ISP公司，提供内容托管的IDC提供商。</article>
+                    <button class="readmore-btn">阅读更多</button>
+                </div>
+
+                <div class="activity">
+                    <div class="act-img-wrapper">
+                        <img src="src/assets/images/watercrafts-on-river-3464632.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                        <p class="date-published">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>2020年12月11日
+                        </p>
+                        <p class="comments">
+                            <i class="fa fa-comments" aria-hidden="true"></i>33条评论
+                        </p>
+                    </div>
+                    <h2 class="act-title">提供互联网接入的ISP公司</h2>
+                    <article>网络公司指的是提供网络服务的互联网内容提供商ICP公司，提供互联网接入的ISP公司，提供内容托管的IDC提供商。</article>
+                    <button class="readmore-btn">阅读更多</button>
+                </div>
+
+                <div class="activity">
+                    <div class="act-img-wrapper">
+                        <img src="src/assets/images/red-suspension-bridge-3493772.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                        <p class="date-published">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>2020年12月11日
+                        </p>
+                        <p class="comments">
+                            <i class="fa fa-comments" aria-hidden="true"></i>33条评论
+                        </p>
+                    </div>
+                    <h2 class="act-title">提供互联网接入的ISP公司</h2>
+                    <article>网络公司指的是提供网络服务的互联网内容提供商ICP公司，提供互联网接入的ISP公司，提供内容托管的IDC提供商。</article>
+                    <button class="readmore-btn">阅读更多</button>
+                </div>
+            </section>
+        </section>
+    </div>
+<!--        底部在信息-->
+<footer>
+    <div class="footer-menus">
+        <div class="contact-us">
+            <p class="menu-title">联系我们</p>
+            <p>地址：中国甘肃省天水市马跑圈街道商务中心10号楼</p>
+            <p>电话：15462596844</p>
+            <p>传真：15465235668</p>
+            <p>电子邮箱：admin@qq.com</p>
+        </div>
+
+        <div class="service-menu footer-menu">
+            <p class="menu-title">服务概览</p>
+            <ul class="menu-items">
+                <li><a href="#">网站建设</a></li>
+                <li><a href="#">域名购买</a></li>
+                <li><a href="#">网页设计</a></li>
+                <li><a href="#">移动应用</a></li>
+            </ul>
+        </div>
+
+        <div class="service-menu footer-menu">
+            <p class="menu-title">成功案例</p>
+            <ul class="menu-items">
+                <li><a href="#">桌面网站</a></li>
+                <li><a href="#">移动网站</a></li>
+                <li><a href="#">科研项目</a></li>
+                <li><a href="#">软件应用</a></li>
+            </ul>
+        </div>
+
+        <div class="service-menu footer-menu">
+            <p class="menu-title">公司动态</p>
+            <ul class="menu-items">
+                <li><a href="#">信息公开</a></li>
+                <li><a href="#">最近新闻</a></li>
+                <li><a href="#">最新博客</a></li>
+            </ul>
+        </div>
+
+        <div class="service-menu footer-menu">
+            <p class="menu-title">帮助与支持</p>
+            <ul class="menu-items">
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">联系客服</a></li>
+                <li><a href="#">文档资源</a></li>
+            </ul>
+        </div>
+        <p class="icp-info">京ICP备 145235687-1号</p>
+        <p class="rights">
+            &copy;2020 千翎科技网络有限公司 版权所有
+        </p>
+        <div class="scrollTop">
+            <a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</footer>
+<!--    引入动画js库-->
+    <script src="libs/anime/anime.min.js"></script>
+<!--    引入glide.js库-->
+    <script src="libs/glide/glide.min.js"></script>
+<!--Isotope.js 超好看前端响应式JS插件 动态实现瀑布流布局排版、筛选、排序等功能-->
+    <script src="libs/isotope/isotope.pkgd.min.js"></script>
+<!--    引入index.js文件-->
+    <script src="src/js/index.js"></script>
+</body>
+</html>
