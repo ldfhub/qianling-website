@@ -68,6 +68,44 @@ filterBtns.addEventListener("click",e => {
 
     isotope.arrange({filter:filterOptions})
   }
-})
+});
 
-// 服务流程部分js
+// 定义通用的配置项
+const staggeringOption = {
+  delay: 300,
+  // 从下到上有50px的移动
+  distance: "50px",
+  // 动画执行500毫秒
+  duration: 500,
+  easing :"ease-in-out",
+  // 方向从下到上走
+  origin :"bottom"
+
+}
+// js文件暴露出来的对象
+//     ...就是匹配staggeringOption中的所有项，给后面拼接interval
+// 关于我们
+ScrollReveal().reveal(".feature",{...staggeringOption,interval:350});
+// 服务流程
+ScrollReveal().reveal(".service-item",{...staggeringOption,interval:350});
+// 团队介绍数据部分
+ScrollReveal().reveal(".data-section",{
+  // 出现之前有一个回调函数
+  beforeReveal:() => {
+    anime({
+      targets:".data-piece .num",
+      // 将当前元素传递进去
+      innerHTML:el =>{
+        // 例如：返回0~156的值
+        return [0,el.innerHTML]
+        // console.log(el)
+      },
+      duration: 2000,
+      // 数字按照1增长，否则会按照小数增长
+      round :1,
+      // 越来越快的动画效果
+      easing :"easeInExpo"
+    })
+  }
+});
+// 设置背景视差效果
