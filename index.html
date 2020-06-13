@@ -20,12 +20,12 @@
             千翎科技
         </div>
         <nav>
-            <a href="#">首页</a>
-            <a href="#">关于我们</a>
-            <a href="#">成功案例</a>
-            <a href="#">服务流程</a>
-            <a href="#">团队介绍</a>
-            <a href="#">公司动态</a>
+            <a href="#home">首页</a>
+            <a href="#about-us">关于我们</a>
+            <a href="#showcases">成功案例</a>
+            <a href="#service">服务流程</a>
+            <a href="#team-intro">团队介绍</a>
+            <a href="#company-activities">公司动态</a>
             <i class="fa fa-search" aria-hidden="true"></i>
         </nav>
         <div class="burger">
@@ -35,7 +35,7 @@
         </div>
     </header>
 <!--    轮播部分-->
-    <div class="glide">
+    <div id="home" class="glide">
         <div class="glide__track" data-glide-el="track">
             <div class="glide__slides">
                 <div class="glide__slide">
@@ -83,7 +83,7 @@
     </div>
     <div class="content-wrapper">
 <!--        关于我们-->
-        <section class="about-us">
+        <section id="about-us" class="about-us">
             <h2 class="title1">关于我们</h2>
             <p class="intro">
                 网络公司不仅仅提供域名注册，空间租用，网站开发，网站建设与网络营销活动策划相关的企业
@@ -122,7 +122,7 @@
             </div>
         </section>
 <!--        成功案例-->
-        <section class="showcases section-bg">
+        <section id="showcases" class="showcases section-bg">
             <h2 class="title1">
                 成功案例
             </h2>
@@ -162,7 +162,7 @@
             </diiv>
         </section>
 <!--        服务流程-->
-        <section class="service">
+        <section id="service" class="service">
             <h2 class="title1">服务流程</h2>
             <p class="intro">
                 网络综合公司，提供包括网络基础服务（如域名，主机，邮箱）和网络增值服务（如网站建设和推广，网站优化）等业务。
@@ -201,7 +201,7 @@
             </div>
         </section>
 <!--        团队介绍-->
-        <section class="team-intro section-bg">
+        <section id="team-intro" class="team-intro section-bg">
             <h2 class="title1">
                 团队介绍
             </h2>
@@ -295,7 +295,7 @@
             </div>
         </section>
 <!--        公司动态-->
-        <section class="company-activities">
+        <section id="company-activities" class="company-activities">
             <h2 class="title1">
                 公司动态
             </h2>
@@ -409,7 +409,7 @@
             &copy;2020 千翎科技网络有限公司 版权所有
         </p>
         <div class="scrollTop">
-            <a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+            <a href="#home"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
         </div>
     </div>
 </footer>
@@ -419,6 +419,8 @@
     <script src="libs/glide/glide.min.js"></script>
 <!--Isotope.js 超好看前端响应式JS插件 动态实现瀑布流布局排版、筛选、排序等功能-->
     <script src="libs/isotope/isotope.pkgd.min.js"></script>
+<!--加载滚动库-->
+    <script src="libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
 <!--    引入index.js文件-->
     <script src="src/js/index.js"></script>
 </body>

@@ -120,9 +120,23 @@ window.addEventListener("scroll",() => {
     dataSectionEl.style.backgroundPosition = 'center calc(50% - ${bottom / 5}px)';
   }
 })
-
-
-
+// 初始化滚动实例
+// 以#号开头的全部显示出来
+const scroll = new SmoothScroll('nav a[href*="#"], .scrollTop a[href*="#"]',{
+  // header属性是不是一个固定的导航,header元素
+  header: "header",
+  // 到区域后往下多滚动导航栏80px
+  offset: 80
+})
+// 获取探索更多的实例
+const exploreBtnEls = document.querySelectorAll(".explore-btn");
+// 循环遍历两个button元素
+exploreBtnEls.forEach(exploreBtnEl => {
+  exploreBtnEl.addEventListener("click",() => {
+    // 实例方法，跳转到#about-us
+    scroll.animateScroll(document.querySelector("#about-us"))
+  });
+});
 
 
 
