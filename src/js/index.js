@@ -89,6 +89,7 @@ ScrollReveal().reveal(".feature",{...staggeringOption,interval:350});
 // 服务流程
 ScrollReveal().reveal(".service-item",{...staggeringOption,interval:350});
 // 团队介绍数据部分
+const dataSectionEl = document.querySelector(".data-section")
 ScrollReveal().reveal(".data-section",{
   // 出现之前有一个回调函数
   beforeReveal:() => {
@@ -106,6 +107,47 @@ ScrollReveal().reveal(".data-section",{
       // 越来越快的动画效果
       easing :"easeInExpo"
     })
+    dataSectionEl.style.backgroundPosition = 'center calc(50% - ${dataSectionEl.getBoundingClientRect().bottom / 5}px)';
   }
 });
 // 设置背景视差效果
+// 监听window滚动事件
+window.addEventListener("scroll",() => {
+  // 获取元素距离上下边的位置
+  const bottom = dataSectionEl.getBoundingClientRect().bottom;
+  const top = dataSectionEl.getBoundingClientRect().top;
+  if(bottom >= 0 && top <= window.innerHeight){
+    dataSectionEl.style.backgroundPosition = 'center calc(50% - ${bottom / 5}px)';
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
