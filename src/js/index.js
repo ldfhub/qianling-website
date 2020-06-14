@@ -128,6 +128,12 @@ const scroll = new SmoothScroll('nav a[href*="#"], .scrollTop a[href*="#"]',{
   // 到区域后往下多滚动导航栏80px
   offset: 80
 })
+//监听全局事件，当开始滚动时，关闭全屏导航
+document.addEventListener("scrollStart",() => {
+  if(headerEl.classList.contains("open")){
+    headerEl.classList.remove("open");
+  }
+});
 // 获取探索更多的实例
 const exploreBtnEls = document.querySelectorAll(".explore-btn");
 // 循环遍历两个button元素
@@ -141,7 +147,7 @@ exploreBtnEls.forEach(exploreBtnEl => {
 const burgerEl = document.querySelector(".burger");
 burgerEl.addEventListener("click", () => {
   headerEl.classList.toggle("open");
-})
+});
 
 
 

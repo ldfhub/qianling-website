@@ -549,6 +549,58 @@ footer .scrollTop a {
   color: white;
   text-decoration: none;
 }
+/*定义.open样式*/
+header.open nav {
+  display: grid;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  grid-auto-rows: max-content;
+  justify-items: end;
+  padding: 0 40px;
+  opacity: 0;
+  animation: slideDown 0.6s ease-out forwards;
+}
+header.open nav * {
+  color: #2e2e2e;
+  animation: showMenu 0.5s linear forwards 0.4s;
+  font-size: 18px;
+  margin: 4px 0px;
+  opacity: 0;
+}
+header.open nav i.fa {
+  margin-top: 10px;
+}
+header.open .burger-line-1,
+header.open .burger-line-2,
+header.open .burger-line-3 {
+  background-color: #2e2e2e;
+  transition: 0.4s ease;
+}
+header.open .burger-line-1 {
+  transform: rotate(45deg) translate(3px, 5px);
+}
+header.open .burger-line-2 {
+  transform: translateX(5px);
+  opacity: 0;
+}
+header.open .burger-line-3 {
+  transform: rotate(-45deg) translate(3px, -5px);
+}
+header.open .logo {
+  z-index: 40;
+  color: #2e2e2e;
+}
+/*less97行*/
+header.sticky .burger-line-1,
+header.sticky .burger-line-2,
+header.sticky .burger-line-3 {
+  background-color: #2e2e2e;
+  transition: 0.4s ease;
+}
 @media (max-width: 1100px) {
   header {
     grid-template-columns: repeat(2, 1fr);
@@ -578,58 +630,6 @@ footer .scrollTop a {
   header .burger .burger-line-3 {
     position: absolute;
     top: 6px;
-  }
-  /*定义.open样式*/
-  header.open nav {
-    display: grid;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    grid-auto-rows: max-content;
-    justify-items: end;
-    padding: 0 40px;
-    opacity: 0;
-    animation: slideDown 0.6s ease-out forwards;
-  }
-  header.open nav * {
-    color: #2e2e2e;
-    animation: showMenu 0.5s linear forwards 0.4s;
-    font-size: 18px;
-    margin: 4px 0px;
-    opacity: 0;
-  }
-  header.open nav i.fa {
-    margin-top: 10px;
-  }
-  header.open .burger-line-1,
-  header.open .burger-line-2,
-  header.open .burger-line-3 {
-    background-color: #2e2e2e;
-    transition: 0.4s ease;
-  }
-  header.open .burger-line-1 {
-    transform: rotate(45deg) translate(3px, 5px);
-  }
-  header.open .burger-line-2 {
-    transform: translateX(5px);
-    opacity: 0;
-  }
-  header.open .burger-line-3 {
-    transform: rotate(-45deg) translate(3px, -5px);
-  }
-  header.open .logo {
-    z-index: 40;
-    color: #2e2e2e;
-  }
-  /*less97行*/
-  header.sticky .burger-line-1,
-  header.sticky .burger-line-2,
-  header.sticky .burger-line-3 {
-    background-color: #2e2e2e;
-    transition: 0.4s ease;
   }
   .content-wrapper .service .services .service-item .service-title {
     font-size: 20px;
@@ -674,5 +674,68 @@ footer .scrollTop a {
   }
   .content-wrapper .showcases .cases .case-item {
     width: calc(33.33333333vw);
+  }
+}
+@media (max-width: 768px) {
+  .content-wrapper section {
+    padding: 0 40px;
+  }
+  .content-wrapper .company-activities .activities {
+    grid-template-columns: 1fr;
+    row-gap: 36px;
+  }
+  .content-wrapper .data-section {
+    grid-template-columns: 1fr;
+    background-size: 300%;
+  }
+  .content-wrapper .team-intro .team-members {
+    grid-template-columns: minmax(200px, 400px);
+  }
+  .content-wrapper .service .services {
+    grid-template-columns: 1fr;
+  }
+  .content-wrapper .about-us .features {
+    grid-template-columns: 1fr;
+  }
+  .content-wrapper .showcases .cases .case-item {
+    width: calc(50vw);
+    height: 30vw;
+  }
+  footer .footer-menus {
+    padding: 0 40px;
+    /*三列布局*/
+    grid-template-columns: 2fr repeat(2, 1fr);
+    row-gap: 24px;
+  }
+  footer .footer-menus .contact-us {
+    grid-row: 1 / 3;
+  }
+  footer .footer-menus .footer-menu {
+    text-align: right;
+  }
+}
+/*570px*/
+@media (max-width: 570px) {
+  .glide .slide-caption h1 {
+    font-size: 28px;
+  }
+  .glide .slide-caption h3 {
+    font-size: 14px;
+  }
+  .glide .slide-caption .explore-btn {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+  .content-wrapper .showcases .cases .case-item {
+    width: 100vw;
+    height: 60vw;
+  }
+  footer .footer-menus {
+    /*一列布局*/
+    grid-template-columns: 1fr;
+  }
+  footer .footer-menus .footer-menu {
+    justify-self: start;
+    text-align: left;
   }
 }
