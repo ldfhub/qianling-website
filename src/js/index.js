@@ -137,8 +137,11 @@ exploreBtnEls.forEach(exploreBtnEl => {
     scroll.animateScroll(document.querySelector("#about-us"))
   });
 });
-
-
+// 获取折叠按钮的实例
+const burgerEl = document.querySelector(".burger");
+burgerEl.addEventListener("click", () => {
+  headerEl.classList.toggle("open");
+})
 
 
 
